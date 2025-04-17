@@ -17,5 +17,15 @@
   <img src="logo.png" alt="Logo" class="w-full max-w-[400px] h-auto mb-4" />
   <p class="text-lg mb-6 max-w-xl">Windows Automation | Desktop and App Virtualization</p>
   <a href="https://calendly.com/andrewshaffer" class="text-gray-700 underline hover:text-black transition">Book a Meeting</a>
+  <a id="email-link" class="text-gray-600 underline hover:text-black transition mt-1"></a>
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      const user = "info";
+      const domain = "greyhoop.com";
+      const link = document.getElementById("email-link");
+      link.href = `mailto:${user}@${domain}`;
+      link.textContent = `${user}@${domain}`;
+    });
+  </script>
 </body>
 </html>
